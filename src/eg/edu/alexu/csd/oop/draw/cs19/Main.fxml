@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="mainPane" prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eg.edu.alexu.csd.oop.draw.cs19.MainController">
+   <children>
+      <ToolBar fx:id="toolBar" prefHeight="75.0" prefWidth="1500.0">
+         <items>
+            <HBox prefHeight="51.0" prefWidth="16.0" />
+            <ComboBox fx:id="shapesCombo" onAction="#comboListener" prefHeight="47.0" prefWidth="191.0" />
+            <Button fx:id="selectBtn" mnemonicParsing="false" onAction="#selectListener" prefHeight="46.0" prefWidth="53.0" text="Select" />
+            <VBox alignment="CENTER" prefHeight="63.0" prefWidth="199.0" />
+            <Button mnemonicParsing="false" onAction="#resetListener" text="Reset" />
+            <HBox prefHeight="51.0" prefWidth="16.0" />
+            <Button mnemonicParsing="false" onAction="#pluginListener" text="Plug In" />
+            <HBox prefHeight="51.0" prefWidth="16.0" />
+            <HBox prefHeight="51.0" prefWidth="16.0" />
+            <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#saveListener" prefHeight="29.0" prefWidth="59.0" text="Save" />
+            <HBox prefHeight="51.0" prefWidth="16.0" />
+            <Button fx:id="loadBtn" mnemonicParsing="false" onAction="#loadListener" prefHeight="29.0" prefWidth="57.0" text="Load" />
+            <HBox prefHeight="51.0" prefWidth="16.0" />
+            <Button fx:id="undoBtn" mnemonicParsing="false" onAction="#undoListener" text="Undo" />
+            <HBox prefHeight="51.0" prefWidth="16.0" />
+            <Button fx:id="redoBtn" mnemonicParsing="false" onAction="#redoListener" text="Redo" />
+            <HBox prefHeight="63.0" prefWidth="37.0" />
+            <HBox prefHeight="63.0" prefWidth="38.0" />
+            <VBox prefHeight="63.0" prefWidth="405.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="37.0" prefWidth="399.0" style="-fx-padding: 0;">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="67.0" text="Color" />
+                        <HBox prefHeight="63.0" prefWidth="2.0" />
+                        <ColorPicker fx:id="colorPicker" onAction="#colorPickerListener" />
+                        <HBox prefHeight="37.0" prefWidth="35.0" />
+                        <Label prefHeight="19.0" prefWidth="78.0" text="Fill Color" />
+                        <HBox prefHeight="63.0" prefWidth="3.0" />
+                        <ColorPicker fx:id="fillColorPicker" onAction="#fillColorPickerListener" />
+                     </children>
+                  </HBox>
+                  <Slider fx:id="zoomSlider" blockIncrement="0.1" majorTickUnit="0.1" max="2.0" minorTickCount="0" prefHeight="15.0" prefWidth="287.0" snapToTicks="true" style="-fx-padding: 5;" value="1.0" />
+               </children>
+            </VBox>
+         </items>
+      </ToolBar>
+      <Pane fx:id="canvasPane" layoutX="-1.0" layoutY="75.0" onMouseDragged="#canvasListenerDragged" onMousePressed="#canvasListenerPressed" onMouseReleased="#canvasListenerReleased" prefHeight="825.0" prefWidth="1500.0" style="-fx-background-color: white;" />
+   </children>
+</Pane>

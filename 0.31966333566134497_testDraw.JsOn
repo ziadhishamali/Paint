@@ -1,0 +1,71 @@
+{"ShapeArray" : [
+{ "className" : " eg.edu.alexu.csd.oop.draw.cs19.Elliptical",
+"x" : "0",
+"y" : "0",
+{"Map" : [
+{ "Short Radius" : "0.0",
+"Long Radius" : "0.0",
+} 
+]} 
+"color" : "0x00000000",
+"fillcolor" : "0x00000000"
+},
+
+{ "className" : " eg.edu.alexu.csd.oop.draw.cs19.Coordinate",
+"x" : "0",
+"y" : "0",
+{"Map" : [
+{ "Length" : "0.0",
+"Y1" : "0.0",
+"X1" : "0.0",
+"Y2" : "0.0",
+"X2" : "0.0",
+"Y3" : "0.0",
+"X3" : "0.0",
+} 
+]} 
+"color" : "0x00000000",
+"fillcolor" : "0x00000000"
+},
+
+{ "className" : " eg.edu.alexu.csd.oop.draw.cs19.Polygon",
+"x" : "0",
+"y" : "0",
+{"Map" : [
+{ "Length" : "0.0",
+"Y1" : "0.0",
+"X1" : "0.0",
+"Y2" : "0.0",
+"X2" : "0.0",
+"Width" : "0.0",
+} 
+]} 
+"color" : "0x00000000",
+"fillcolor" : "0x00000000"
+},
+
+{ "className" : " eg.edu.alexu.csd.oop.draw.RoundRectangle",
+"x" : "null",
+"y" : "null",
+{"Map" : [
+{ "Length" : "0.0",
+"ArcWidth" : "0.0",
+"ArcLength" : "0.0",
+"Width" : "0.0",
+} 
+]} 
+"color" : "null",
+"fillcolor" : "null"
+},
+
+{ "className" : " eg.edu.alexu.csd.oop.test.DummyShape",
+"x" : "null",
+"y" : "null",
+{"Map" : [
+{ } 
+]} 
+"color" : "java.awt.Color[r=255,g=0,b=0]",
+"fillcolor" : "null"
+},
+
+]}
